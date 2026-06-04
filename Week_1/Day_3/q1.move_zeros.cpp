@@ -1,4 +1,3 @@
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,9 +15,15 @@ public:
     }
 };
 
+int main() {
+    vector<int> arr = {2,3,4,5,0,8,0,9,0,8,0};
 
-int main(){
-    vector<int>arr ={2,3,4,5,0,8,0,9,0,8,0};
     Solution obj;
-    cout<<movesZeroes
+    obj.moveZeroes(arr);
+
+    for(int x : arr) {
+        cout << x << " ";
+    }
+
+    return 0;
 }
