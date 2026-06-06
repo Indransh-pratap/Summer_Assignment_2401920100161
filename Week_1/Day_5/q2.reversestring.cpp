@@ -1,0 +1,34 @@
+// reverse string can be also done using cpp
+#include<iostream>
+#include<string.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int left = 0;
+        int right = s.size()-1;
+
+        while (left < right) {
+            swap(s[left], s[right]);
+            left++;
+            right--;
+        }
+    }
+};
+
+int main() {
+    vector<char> s = {'h', 'e', 'l', 'l', 'o'};
+
+    Solution obj;
+
+    obj.reverseString(s);
+
+    for(char ch : s) {
+        cout << ch;
+    }
+
+    return 0;
+}
