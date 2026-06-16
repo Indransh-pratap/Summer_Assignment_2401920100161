@@ -29,6 +29,8 @@ class soultion{
       for(int i=0; i<26; i++){
         if(frq[i]!=0) return false;
       }
+
+      return true;
     }
 
 };
