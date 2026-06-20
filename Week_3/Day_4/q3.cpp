@@ -1,6 +1,11 @@
 class Solution {
 public:
 
+// largest ranctanlge in histogram 
+// intution - find nse and pse
+// width = nse - pse -1
+// area = height*woidth
+
     vector<int> prevSmaller(vector<int>& heights){
 
         int n=heights.size();
